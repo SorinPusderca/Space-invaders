@@ -1,4 +1,4 @@
 # Space-invaders
 
 
-Half done space invaders game. CSS, JS files are not shared
+Half done space invaders game. Yes i do have errors, this is what i've done so far
