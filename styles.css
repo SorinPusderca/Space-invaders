@@ -87,6 +87,7 @@ body{
     box-shadow: 0px 0px 100px rgb(197, 15, 173);
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .box div{
@@ -102,6 +103,7 @@ body{
     animation-name: spaceAlien;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    /* position:relative; */
 }
 
 .ship{
@@ -124,7 +126,7 @@ body{
   margin-left: 20px;
   color: red;
   font-size: 45px;
-  position: absolute;
+  /* position: absolute; */
 	display: flex;
 	font-family: arcade;
 	text-align: center;
@@ -132,3 +134,17 @@ body{
 	z-index: 90;
 }
 
+.scoreBoard p {
+  margin: 0;
+}
+/* 
+.text{
+  font-size:x-large;
+  color:rgb(197, 15, 173)
+} */
+
+h2 {
+     
+    color:rgb(197, 15, 173)
+  
+} 
