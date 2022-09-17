@@ -57,9 +57,7 @@ body{
     background-attachment: fixed;
 }
 
-
-
-  h1 {
+h1{
     font-size: 72px;
     -webkit-text-fill-color:transparent;
     margin-top: 30px;
@@ -68,7 +66,7 @@ body{
     animation-name: space;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-  }
+}
 
 
 .box{
@@ -82,7 +80,7 @@ body{
     border: 2px solid rgb(197, 15, 173);
     border-radius: 3%;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 20px;
     /* box-shadow: 0px 0px 100px  rgb(121, 3, 121); */
     box-shadow: 0px 0px 100px rgb(197, 15, 173);
     display: flex;
@@ -124,9 +122,7 @@ body{
 
 .scoreBoard{
   margin-left: 20px;
-  color: red;
   font-size: 45px;
-  /* position: absolute; */
 	display: flex;
 	font-family: arcade;
 	text-align: center;
@@ -134,17 +130,60 @@ body{
 	z-index: 90;
 }
 
+
 .scoreBoard p {
   margin: 0;
+  text-align: center;
 }
-/* 
+
 .text{
   font-size:x-large;
-  color:rgb(197, 15, 173)
-} */
-
-h2 {
-     
-    color:rgb(197, 15, 173)
-  
+  color:rgb(197, 15, 173);
+  margin:auto;
 } 
+
+h2{
+  margin:auto;
+  font-size: 45px;
+  /* position: absolute; */
+	display: flex;
+	font-family: arcade;
+	text-align: center;
+	color: rgb(255, 0, 140);
+	z-index: 90;
+} 
+
+h3{
+  /* width: auto;
+  height: auto; */
+  /* margin: 0; */
+  margin-top: -40px;
+  margin-left: -40px;
+  font-size: 45px;
+	display: flex;
+	font-family: arcade;
+	text-align: center;
+	color: rgb(255, 0, 140);
+	z-index: 90;
+}
+
+h4{
+   /* width: auto;
+  height: auto;  */
+   margin-top: -40px;
+   margin-left: -40px;
+   color: gold;
+   text-align: center;
+   font-size: 45px;
+   /* display: flex; */
+   font-family: arcade;
+  /* margin-top: -40px;
+  margin-left: -40px;
+  font-size: 45px;
+	display: flex;
+	font-family: arcade;
+	text-align: center;
+	color: rgb(255, 0, 140);
+	z-index: 90; */
+  /* text-shadow: ; */
+}

@@ -75,12 +75,15 @@ function fire(e) {
       const indx = invaders.indexOf(bulletIndex);
       square[invaders[indx]].classList.remove("alien");
       play();
+      return;
     }
+
     if (bulletIndex >= width) {
       square[bulletIndex].classList.remove("bullet");
       bulletIndex -= width;
       square[bulletIndex].classList.add("bullet");
-    } else {
+    } 
+    else {
       square[bulletIndex].classList.remove("bullet");
       clearInterval(bulletId);
     }
@@ -91,10 +94,9 @@ function fire(e) {
     const score = invaders.length - aliveInvaders.length;
     scoreNumber.innerText = score;
     if(score === invaders.length){
-        //TODO show wining message
         clearInterval(invaderId);
         box.innerHTML = null;
-        box.innerHTML = '<div><h1>You win !!!</h1></div>';
+        box.innerHTML = '<div><h4>TOP GUN</h4></div>';
         box.style = "color: red;";
 
     }
@@ -121,6 +123,11 @@ function play() {
   var audio = new Audio("./sound/explosionAlien1.wav");
   audio.play();
 }
+
+// function playTwo() {
+//     var audio = new Audio("./sound/mixkit-arcade-space-shooter-dead-notification-272.wav")
+//     audio.playTwo();
+//  }
 
 document.addEventListener("keydown", function (e) {
   if (e.keyCode == 32) {
@@ -170,18 +177,18 @@ function move() {
     
     aliensStatusBeforeMove.forEach((alien, i)=>{
         if( square[invaders[alien.index]].classList.contains('ship')){
-            displayText.innerHTML = "hahahah";
+            // displayText.innerHTML = "hahahah";
+            // clearInterval(invaderId);
             clearInterval(invaderId);
+            box.innerHTML = null;
+            box.innerHTML = '<div><h3>HA-HA LOSER</h3></div>';
+            // box.style = "color: red; margin: auto;";
+            // playTwo();
         }
         else square[invaders[alien.index]].className = alien.class
 
     })
   
-  //////////////////////////////////////////////////////////
 }
-invaderId = setInterval(move, 1000);
+invaderId = setInterval(move, 700);
 
-// ?????????????
-// let moveDiv= setInterval(function(){
-//   let div= document.getElementsByClassName("alien");
-//    div.left= div.offsetLeft +20 +"px"}, 1000);
