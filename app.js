@@ -77,7 +77,6 @@ function fire(e) {
       play();
       return;
     }
-
     if (bulletIndex >= width) {
       square[bulletIndex].classList.remove("bullet");
       bulletIndex -= width;
@@ -149,7 +148,6 @@ function move() {
     else aliensStatusBeforeMove.push({index: i, class: ''})
   }
   remove();
-
   if (right && testRight) {
     for (let i = 0; i < invaders.length; i++) {
       invaders[i] += width + 1;
@@ -157,7 +155,6 @@ function move() {
       testRight = false;
     }
   }
-
   if (left && !testRight) {
     for (let i = 0; i < invaders.length; i++) {
       invaders[i] += width - 1;
@@ -165,9 +162,7 @@ function move() {
       testRight = true;
     }
   }
-
   for (let i = 0; i < invaders.length; i++) {
-    // invaders[i]+= 1
     invaders[i] += test;
   }
 
