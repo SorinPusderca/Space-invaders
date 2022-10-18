@@ -1,34 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device=width initial-scale=1">
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="http://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="./png/space-invaders (2).png">
-    <style>
-      @import url("http://fonts.cdnfonts.com/css/common-pixel");
-    </style>
-    <title>Space Invaders</title>
-  </head>
 
-  <body>
+<head>
+  <meta name="viewport" content="width=device=width initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="http://fonts.cdnfonts.com/css/common-pixel" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="./png/space-invaders (2).png">
+  <style>
+    @import url("http://fonts.cdnfonts.com/css/common-pixel");
+  </style>
+  <title>Space Invaders</title>
+</head>
 
+<body>
 
+  <main>
     <h1><i>SPACE INVADERS</i></h1>
     <span class="scoreBoard">
       <p>SCORE:</p>
       <p id="score">0</p>
     </span>
 
-    <!-- <h2 style="text-align: center;" class="text"></h2> -->
-    <div  class="box"></div>
-    
-   
-      
-
+    <div class="box"></div>
 
     <audio id="explosionAlien" controls style="display:none">
       <source src="./sound/explosionAlien1.wav" type="audio/mpeg">
@@ -47,11 +43,12 @@
     </audio>
 
     <audio id="audio" controls style="display:none">
-        <source src="./sound/fireItOut2.wav" type="audio/mpeg">
-      </audio>
-
+      <source src="./sound/fireItOut2.wav" type="audio/mpeg">
+    </audio>
 
 
     <script src="app.js"></script>
-  </body>
+  </main>
+</body>
+
 </html>

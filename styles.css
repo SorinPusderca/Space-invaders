@@ -1,10 +1,12 @@
 * {
     box-sizing: border-box;
   }
-  @font-face {
+  
+@font-face {
     font-family:arcade;
     src: url(./font/arcade/ARCADE.TTF);
   }
+
 @keyframes space {
     0%{
         background: -webkit-linear-gradient(blue, red);
@@ -33,22 +35,15 @@
 @keyframes spaceAlien{
       0%{
         background-image: url(./png/alien-pixelated-shape-of-a-digital-game\ \(4\).png);
-        /* box-shadow: 0px 5px 0px purple; */
-
       }
       20%{
         background-image: url(./png/alien-pixelated-shape-of-a-digital-game\ \(4\).png);
-        /* box-shadow: 0px 5px 0px  purple; */
       }
       50%{
         background-image: url(./png/pixelated-alien\ \(3\).png);
-        /* background-image: url(./png/space-game-character-of-pixels\ \(4\).png); */
-        /* box-shadow:  0px 5px 0px  purple */
       }
       100%{
-        /* background-image: url(./png/pixelated-alien\ \(3\).png); */
         background-image: url(./png/space-game-character-of-pixels\ \(4\).png);
-        /* box-shadow:  0px 5px 0px  purple */
       }
 }
 
@@ -70,8 +65,6 @@ h1{
 
 
 .box{
-    /* background-image: url(./images/bg_02_h.png); */
-    /* background-image: url(./images/t5e60874a213cf.jpg); */
     background-image: url(./images/1e64c3289a248160c26a3b57b221e282.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -81,7 +74,6 @@ h1{
     border-radius: 3%;
     margin: auto;
     margin-top: 20px;
-    /* box-shadow: 0px 0px 100px  rgb(121, 3, 121); */
     box-shadow: 0px 0px 100px rgb(197, 15, 173);
     display: flex;
     flex-wrap: wrap;
@@ -101,7 +93,6 @@ h1{
     animation-name: spaceAlien;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    /* position:relative; */
 }
 
 .ship{
@@ -114,7 +105,6 @@ h1{
 
 
 .bullet{
-  /* background-color: red; */
   background-image: url(./png/bullets\ \(1\).png);
   background-repeat: no-repeat;
   background-position: center;
@@ -145,7 +135,6 @@ h1{
 h2{
   margin:auto;
   font-size: 45px;
-  /* position: absolute; */
 	display: flex;
 	font-family: arcade;
 	text-align: center;
@@ -154,9 +143,6 @@ h2{
 } 
 
 h3{
-  /* width: auto;
-  height: auto; */
-  /* margin: 0; */
   margin-top: -40px;
   margin-left: -40px;
   font-size: 45px;
@@ -168,27 +154,12 @@ h3{
 }
 
 h4{
-   /* width: auto;
-  height: auto;  */
    margin-top: -40px;
    margin-left: -40px;
    color: gold;
    text-align: center;
    font-size: 45px;
-   /* display: flex; */
    font-family: arcade;
-  /* margin-top: -40px;
-  margin-left: -40px;
-  font-size: 45px;
-	display: flex;
-	font-family: arcade;
-	text-align: center;
-	color: rgb(255, 0, 140);
-	z-index: 90; */
-  /* text-shadow: ; */
 }
 
 
-/* background: #e0e0e0;
-box-shadow:  20px 20px 60px #bebebe,
-             -20px -20px 60px #ffffff; */

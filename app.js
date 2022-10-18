@@ -135,8 +135,6 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-// let win= document.getElementById('.winGame');
-// winGame.innerHTML="<p>HA-HA LOSER</p>"
 
 ///////////////////MOTION///////////////////
 ///////////////////MOTION///////////////////
