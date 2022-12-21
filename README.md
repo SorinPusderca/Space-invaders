@@ -15,4 +15,5 @@ clearInterval(), e.key. Array.from();
 the invaders in the main border;
 -Collision detector to eliminate the invaders at the time of laser
 impact;
--Sound functions, CSS animation for the
+-Sound functions, CSS animation for the different shapes and
+colors of the invaders, text animation.
